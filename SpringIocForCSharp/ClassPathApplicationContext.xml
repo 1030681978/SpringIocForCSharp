@@ -1,0 +1,15 @@
+<beans>
+	<bean id="a" class="A">
+		<property name="age" value="10" />
+    <property name="name" value="大大" />
+	</bean>
+  <bean id="b" class="B">
+    <property name="a" ref="a" />
+    <property name="name" value="小黄" />
+  </bean>
+  <bean id="c" class="C">
+    <property name="a" ref="a" />
+    <property name="b" ref="b" />
+    <property name="id" value="10000"></property>
+  </bean>
+</beans>
